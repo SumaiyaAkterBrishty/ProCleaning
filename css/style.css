@@ -239,7 +239,7 @@ h1,h2,h3,h4,h5,h6,p{
 
 /* Feedback */
 
-/* Feedback Section */
+/* Feedback Title */
 
 .feedback-title {
     font-size: 36px;
@@ -254,6 +254,8 @@ h1,h2,h3,h4,h5,h6,p{
     margin-bottom: 40px;
 }
 
+/* Feedback Button */
+
 .btn.feedback-btn {
     background-color: white;
     color: #36b864;
@@ -263,25 +265,52 @@ h1,h2,h3,h4,h5,h6,p{
     border-radius: 5px;
 }
 
-.btn.feedback-btn:hover,
-.btn.feedback-btn:focus,
-.btn.feedback-btn:active {
+.btn.feedback-btn:hover {
     background-color: #36b864;
     color: white;
     border-color: #36b864;
 }
 
-.client-img {
-    /* height: 200px; */
-    width: 100%;
-    object-fit: cover;
+/* Feedback Card */
+
+.feedback-card {
+    position: relative;
 }
 
-.quote-mark {
-    right: 104px;
-    top: 5px;
-    font-size: 100px;
-    color: #36b864;
+/* Client Image */
+
+.client-img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+/* Client Name */
+
+.feedback-card h5 {
+    color: #111d15;
+    padding-right: 0;
+}
+
+/* Quote Image */
+
+.feedback-card .quote-mark {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.feedback-card .quote-mark img {
+    width: 45px;
+    height: auto;
+}
+
+/* Feedback Description */
+
+.feedback-card > p {
+    line-height: 1.7;
 }
 
 /* feedback style end */
@@ -506,3 +535,4 @@ h1,h2,h3,h4,h5,h6,p{
     font-size: 14px;
     color: #ddd;
 }
+
